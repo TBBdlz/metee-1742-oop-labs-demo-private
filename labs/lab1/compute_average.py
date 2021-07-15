@@ -30,7 +30,7 @@ def compute_avg_list(n: int) -> None:
     numbers_str = input(f'Enter {n} positive numbers:')
     print('You entered', numbers_str)
     number_list_str = numbers_str.split()
-    print('Numbers are', numbers_str)
+    print('Numbers are', number_list_str)
     number_list = [int(i) for i in number_list_str]
     average = sum(number_list) / len(number_list)
     print(f'The average number of the list is {average:.2f}')
