@@ -10,6 +10,7 @@ class Pet:
         print('moving ...')
 
 
+
 class Cat(Pet):
 
     def __init__(self, name, owner, color):
@@ -24,6 +25,10 @@ class Cat(Pet):
 
     def move(self):
         print('Cat likes to walk more than run')
+
+
+    def __del__(self):
+        print(f'Oh no! ma boi {self.name}')
 
 
 class Dog(Pet):
@@ -43,6 +48,7 @@ class Dog(Pet):
 
     def eat_cat(self, cat: Cat):
         print(f'Dog {self.name} eats cat {cat.name}')
+        del cat
 
 
 if __name__ == '__main__':
@@ -56,3 +62,5 @@ if __name__ == '__main__':
     dog1.show_info()
     dog1.move()
     dog1.eat_cat(cat1)
+    print(cat1 == None)
+    print(cat1)

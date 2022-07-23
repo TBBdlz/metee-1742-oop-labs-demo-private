@@ -1,6 +1,5 @@
 """
-    Prob1 is GPA calculating program
-    program take name, gpas as input
+    Prob1 is GPA calculating program take name, gpas as input
     and compare gpa to {my_gpa} in program
     author: Metee Yingyongwatthanakit
     date: 29 October 2021
